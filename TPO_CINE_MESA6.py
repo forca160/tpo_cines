@@ -100,6 +100,21 @@ def VISUAL_mostrar_mensajes_inicio():
     print("")
     print("")
 
+def mostrar_butacas(matriz):
+    filas = len(matriz)
+    columnas = len(matriz[0])
+    
+    print(columnas*"▓"*3)
+    print(columnas*"▓"*3)
+    
+    for f in range(filas):
+        for c in range(columnas):
+            if matriz[f][c] == 0:
+                print(" ○ ", end="")
+            else:
+                print(" ◙ ", end="")
+        print()
+
 
 # --------------------------------
 # ------------- PROGRAMA PRINCIPAL
